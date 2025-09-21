@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WijiMart</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fefefe;
+    }
+
+    .navbar {
+      background-color: #ff5722;
+      padding: 10px 20px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .navbar input {
+      padding: 6px;
+      border: none;
+      border-radius: 4px;
+      width: 50%;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 16px;
+      padding: 20px;
+    }
+
+    .product-card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .product-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    .product-card h3 {
+      margin: 10px 0 5px;
+      font-size: 16px;
+    }
+
+    .product-card p {
+      margin: 0;
+      color: #777;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .navbar h1 {
+        font-size: 18px;
+      }
+
+      .navbar input {
+        width: 70%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <h1>WijiMart</h1>
+    <input type="text" placeholder="Cari produk wiji...">
+  </div>
+
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="https://files.catbox.moe/90am0j.jpg" alt="Wiji A">
+      <h3>Wiji A</h3>
+      <p>Rp1.000</p>
+    </div>
+    <div class="product-card">
+      <img src="https://files.catbox.moe/u2nbe7.jpg" alt="Wiji B">
+      <h3>Wiji B</h3>
+      <p>Rp100.000</p>
+    </div>
+    <div class="product-card">
+      <img src="https://files.catbox.moe/a3uyx3.jpg" alt="Wiji C">
+      <h3>Wiji C</h3>
+      <p>Rp200</p>
+    </div>
+    <!-- Tambahkan produk lainnya di sini -->
+  </div>
+
+</body>
+</html>
